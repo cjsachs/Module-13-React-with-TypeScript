@@ -37,14 +37,7 @@ const App = () => {
   
   return (
     <div>
-      <p>Full Name: {fullName}</p>
-      <p>Birth Year: {birthYear}</p>
-      <p>isAdmin: {isAdmin ? 'Yes' : 'No'}</p>
-      <p>{favFruits.map((fruit, idx) => (
-        <li key={idx}>{fruit}</li>
-      ))}</p>
-      <p>My Dog's name is: {dog.name}</p>
-      <button onClick={() => printToConsole('Learning TypeScript')}>Click Me</button>
+      <TodoList/>
     </div>
   )
 }
